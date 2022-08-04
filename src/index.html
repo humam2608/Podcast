@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+  <head> 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +9,19 @@
     <title>Podcast Questions</title>
   </head>
   <body>
-    <button id="modal-btn" class="mui-btn mui-btn--fab mui-btn--accent floating-btn" >All</button>
     <div id="sidebar">
       <div class="mui--text-white mui--text-display1 mui--align-vertical">
         Podcast Questions
         <br>
+        <div>
+          <button id="signin" class="mui-btn mui-btn--raised signedout" style="display:none;">Sign In</button>
+        </div>
+        <div>
+          <button id="signup" class="mui-btn mui-btn--raised signedout" style="display:none;">Sign Up</button>
+        </div>
+        <div>
+          <button id="signout" class="mui-btn mui-btn--raised mui-btn--accent signedin" style="display:none;">Sign Out</button>
+        </div>
         <small class="author">
           by Humam
         </small>
@@ -43,10 +51,18 @@
           <br>
 
           <div id="list"></div>
+
+          <button type="submit" id="all-btn" class="mui-btn mui-btn--raised mui-btn--primary" >All Questions</button>
           
         </div>
       </div>
     </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-auth-compat.js"></script>
+  
   </body>
 </html>
 

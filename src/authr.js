@@ -4,12 +4,27 @@ export function getAuthForm () {
       <div class="mui-textfield mui-textfield--float-label">
         <input type="email" id="email">
         <label for="email">Email</label>
-      </div>
+      </div> 
       <div class="mui-textfield mui-textfield--float-label">
         <input type="password" id="password">
         <label for="password">Password</label>
       </div>
       <button type="submit" class="mui-btn mui-btn--raised mui-btn--primary">Sign In</button>
+    </form> `
+}
+
+export function getSignUpForm () {
+  return `
+    <form class="mui-form" id="signup-form">
+      <div class="mui-textfield mui-textfield--float-label">
+        <input type="email" id="signup-email">
+        <label for="email">Email</label>
+      </div> 
+      <div class="mui-textfield mui-textfield--float-label">
+        <input type="password" id="signup-password">
+        <label for="password">Password</label>
+      </div>
+      <button type="submit" class="mui-btn mui-btn--raised mui-btn--primary">Sign Up</button>
     </form> `
 }
 

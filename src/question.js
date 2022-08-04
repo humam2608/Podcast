@@ -5,8 +5,8 @@ export class Question {
       body: JSON.stringify(question),
       headers: {
         contentType: 'application/json'
-      }
-    })
+      } 
+    }) 
       .then(response => response.json())
       .then(response => {
         question.id = response.name
@@ -75,4 +75,4 @@ function toCard (question) {
     </div>
     <br>
   `
-}
+} 
